@@ -1,0 +1,8 @@
+{
+	"workflow": {
+		"name": "Workflow",
+		"description": "Workflow",
+		"tags": ["workflow", "ai", "open-source"],
+		"image": "/images/workflow/workflow.png"
+	}
+}
