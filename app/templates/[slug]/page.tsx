@@ -13,6 +13,7 @@ export default async function Page({
 	const { slug } = await params
 	const { default: Post } = await import(`@/content/${slug}/index.mdx`)
 
+	console.log('Post', Post)
 	return <Post />
 }
 

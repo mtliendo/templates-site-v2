@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 export const metadata = {
 	title: 'About',
 	description: 'About page',
 	date: '2025-01-01',
 	slug: 'about',
-	coverImage: '/images/about/about-pic.png',
+	coverImage: '/images/about/sample.png',
 	tags: ['fullstack', 'open-source', 'ai'],
 }
 
@@ -19,7 +21,14 @@ This is a list in markdown:
 
 Checkout my React component:
 
-![my image](/images/about/about-pic.png)
+<Image
+	src="/images/about/sample.png"
+	alt="my image"
+	className="w-full h-auto"
+	sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+	width={400}
+	height={300}
+/>
 
 ok here is some other stuff
 
